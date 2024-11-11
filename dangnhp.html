@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div>
+                <img src="img/banner_anime.jpg" alt="">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+
+                <li><a href="#">Sản Phẩm </a>
+                    <ul>
+                        <li>Tất cả các món</li>
+                        <li>Best seller</li>
+                        <li>Những món sale</li>
+                    </ul>
+                </li>
+                <li><a href="cart.html">Giỏ Hàng </a></li>
+                <li><a href="dangKi.html">Đăng Ký </a></li>
+            </ul>
+        </nav>
+
+        <div class="form_dangnhap">
+             
+                <div class="text" style="padding-top:45px ;">
+                    <a>Tên tài khoản</a><br>
+                    <input type="text" style="width: 90%;" id="name_dangnhap" required placeholder="Vui lòng nhập tài khoản" ><br>
+                    <span style="display: inline-block; color: red;" id="error_Account"></span>
+                </div>
+               
+                <div class="text">
+                    <a>Mật khẩu</a><br>
+                    <input type="password" style="width: 90%;" id="password_dangnhap" required placeholder="Vui lòng nhập mật khẩu">
+                    <span style="display: inline-block; color: red;" id="error_Password" ></span>
+                </div>
+                 
+            </div>
+            <a href="dangKi.html">Bạn chưa có tài khoản</a>
+             <input type="button" value="Đang nhập"  style="width: 90%;" id="buttonDangNhap" onclick="dangNhap()">
+      
+
+             
+        </div>
+
+        <footer>
+            <div>
+                <h3 class="text-white mb-3">DOLLY STORE</h3>
+                <p>Địa Chỉ: 27b Nguyễn Đình Chiểu, Phường Đakao, Quận 1, TP.HCM</p>
+                <p>Điện thoại: 1900.63.68.22</p>
+                <p>Email: info@dollystore.vn</p>
+                <p>Website: support.dollystore.vn</p>
+            </div>
+        </footer>
+       
+        <script src="css/cart.js"></script>
+</body>
+
+</html>

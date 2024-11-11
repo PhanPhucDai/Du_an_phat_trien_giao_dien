@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="css/main.js" defer></script>
+    <script src="css/cart.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <img src="img/banner_anime.jpg" alt="">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+
+                <li><a href="sanpham.html">Sản Phẩm </a>
+                    <ul>
+                        <li>Tất cả các món</li>
+                        <li>Best seller</li>
+                        <li>Những món sale</li>
+                    </ul>
+                </li>
+                <li><a href="cart.html">Giỏ Hàng </a></li>
+                <li><a href="dangKi.html">Đăng Ký </a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="banner_left">
+                <img src="img/Dolly_banner.jpeg" alt="">
+            </div>
+            <div class="banner_right">
+
+                <br>
+                <br>
+                <h3 style="padding: 5px; color: rgb(0, 142, 237);">CHẤT LƯỢNG - TƯƠI MÁT - HẠT DẺ</h3>
+                <p class="p_banner">
+                    DOLLY STORE - Nơi Hòa Quyện Cảm Xúc, Nâng Tầm Hương Vị Của Bạn!
+                </p>
+                <p style="text-align: center; color: rgb(255, 136, 0); font-size: 15px;">
+                    <br><br>
+                    Nếu bạn muốn biết thêm về DOLLY STORE, bạn có thể xem menu và đặt món trực tuyến tại đây. <br>
+                    Họ cung cấp trà sữa, trà đào và các loại trà có hương như bạc hà, nho, và chocolate.
+                    <br> Giao hàng tận nơi trong vòng ít phút! 😊🚚
+                    <br>Chúc bạn có những trải nghiệm thú vị khi thưởng thức trà sữa tại DOLLY STORE! 🥤🌟
+
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="group">
+                    <p style=" color: rgb(0, 211, 222); font-size: 30px; font-weight: bold;">Giỏ hàng của bạn</p>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="banner_right_cart">
+                    <table border="1"  >
+                        <tr>
+                            <th> STT </th>
+                            <th colspan="3"> Sản phẩm </th>
+                            <th> Tên sản phẩm </th>
+                            <th> Số lượng </th>
+                            <th> Giá Bán </th>
+                            <th style="width: 120px;"> Xóa </th>
+                        </tr>
+                        <tbody id="gioHang"> </tbody>
+                        <tr>
+                            <td colspan="6"   > Thành Tiền </td>
+                            <td colspan="1" id="toltal"> 10.97 </td>
+                            <td><button class="fm1_1" onclick="checkLogin()">Mua ngay</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="group">
+            <p>BEST SELLER</p>
+        </div>
+        <div class="row">
+            
+        </div>
+        <footer>
+            <div>
+                <h3 class="text-white mb-3">DOLLY STORE</h3>
+                <p>Địa Chỉ: 27b Nguyễn Đình Chiểu, Phường Đakao, Quận 1, TP.HCM</p>
+                <p>Điện thoại: 1900.63.68.22</p>
+                <p>Email: info@dollystore.vn</p>
+                <p>Website: support.dollystore.vn</p>
+            </div>
+        </footer>
+ </body>
+    
+
+</html>

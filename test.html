@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Images with Prices and Descriptions</title>
+    <style>
+        .image-item {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+        .image-item img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="imageContainer"></div>
+
+    <script>
+        // Mảng chứa thông tin về các bức ảnh
+        var imageArray = [
+            {
+                src: 'path/to/image1.jpg',
+                price: '$10',
+                description: 'Mô tả ảnh 1'
+            },
+            {
+                src: 'path/to/image2.jpg',
+                price: '$20',
+                description: 'Mô tả ảnh 2'
+            },
+            {
+                src: 'path/to/image3.jpg',
+                price: '$30',
+                description: 'Mô tả ảnh 3'
+            },
+            {
+                src: 'path/to/image4.jpg',
+                price: '$40',
+                description: 'Mô tả ảnh 4'
+            },
+            {
+                src: 'path/to/image5.jpg',
+                price: '$50',
+                description: 'Mô tả ảnh 5'
+            }
+        ];
+
+        // Lấy phần tử chứa hình ảnh từ DOM
+        var imageContainer = document.getElementById('imageContainer');
+
+        // Duyệt qua mảng và tạo các phần tử HTML để hiển thị ảnh, giá cả và mô tả
+        for (var i = 0; i < imageArray.length; i++) {
+            // Tạo phần tử chứa thông tin hình ảnh
+            var imageItem = document.createElement('div');
+            imageItem.className = 'image-item';
+
+            // Tạo phần tử hình ảnh
+            var imgElement = document.createElement('img');
+            imgElement.src = imageArray[i].src;
+            imgElement.alt = 'Image ' + (i + 1);
+
+            // Tạo phần tử hiển thị giá cả
+            var priceElement = document.createElement('p');
+            priceElement.textContent = 'Giá: ' + imageArray[i].price;
+
+            // Tạo phần tử hiển thị mô tả
+            var descriptionElement = document.createElement('p');
+            descriptionElement.textContent = imageArray[i].description;
+
+            // Thêm các phần tử vào phần tử chứa thông tin hình ảnh
+            imageItem.appendChild(imgElement);
+            imageItem.appendChild(priceElement);
+            imageItem.appendChild(descriptionElement);
+
+            // Thêm phần tử chứa thông tin hình ảnh vào container
+            imageContainer.appendChild(imageItem);
+        }
+    </script>
+</body>
+</html>

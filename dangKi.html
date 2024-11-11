@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="css/login.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div>
+                <img src="img/banner_anime.jpg" alt="">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+
+                <li><a href="#">Sản Phẩm </a>
+                    <ul>
+                        <li>Tất cả các món</li>
+                        <li>Best seller</li>
+                        <li>Những món sale</li>
+                    </ul>
+                </li>
+                <li><a href="cart.html">Giỏ Hàng </a></li>
+                <li><a href="dangKi.html">Đăng Ký </a></li>
+            </ul>
+        </nav>
+
+
+        <div style="width: 1000px; background-color: aliceblue; float: left; ">
+            <div style="text-align: center;"><span style="font-size: 28px;">Đăng Kí</span></div>
+            <div class="text" style="width: 600px; margin-left: 200px;">
+                <a>Họ và tên</a><br>
+                <input type="text" id="name" required="required" placeholder="Vui lòng nhập họ và tên" autofocus>
+                <div><span style=" display: inline-block; color: red;" id="error_name"></span></div>
+            </div>
+            <div class="text" style="width: 600px; margin-left: 200px;">
+                <a>Email</a><br>
+                <input type="text" id="email" required="required" placeholder="Vui lòng nhập email" autofocus>
+                <div><span style=" display: inline-block; color: red;" id="error_email"></span></div>
+            </div>
+            <div class="text" style="width: 600px; margin-left: 200px;">
+                <a style="bottom: -9px; position: relative;">Số điện thoại</a><br>
+                <input type="text" style="bottom: -7px; position: relative;" id="numberphone" required="required" placeholder="Vui lòng nhập số điện thoại" autofocus  >
+                <div><span style=" display: inline-block; color: red; margin-top: 5px;" id="error_number"></span></div>
+            </div>
+            <div class="text" style="width: 600px; margin-left: 200px;">
+                <a>Tên tài khoản</a><br>
+                <input type="text" id="nameAccount" required="required" placeholder="Vui lòng nhập tên tài khoản" autofocus>
+                <div><span style=" display: inline-block; color: red; margin-top: 5px;" id="error_nameAccount"></span></div>
+            </div>
+
+            <div class="text" style="width: 600px; margin-left: 200px;">
+                <a>Địa chỉ</a><br>
+                <input type="text" id="local" required="required" placeholder="Vui lòng nhập địa chỉ" autofocus>
+                <div><span style=" display: inline-block; color: red; margin-top: 5px;" id="error_local"></span></div>
+            </div>
+            <div class="text" style="width: 600px; margin-left: 200px;">
+                <fieldset>
+                    <legend>Giới tính</legend>
+                    <label for="male">Nam</label>
+                    <input type="radio" id="male" name="gender" value="Nam">
+                    <label for="female">Nữ</label>
+                    <input type="radio" id="female" name="gender" value="Nữ">
+                </fieldset> 
+                <div><span style=" display: inline-block; color: red; margin-top: 5px;" id="error_gender"></span></div>
+            </div>
+
+            <div class="text" style="width: 600px; margin-left: 200px;">
+                <a>Mật khẩu</a><br>
+                <input type="password" id="password" required="required" placeholder="Vui lòng nhập mật khẩu "
+                    autofocus>
+                    <div><span style=" display: inline-block; color: red; margin-top: 5px;" id="error_password"></span></div>
+            </div>
+            <a id="dangNhap" href="dangnhp.html " style="width: 500px; margin-left: 200px;">Bạn đã có tài khoản </a>
+            <div>
+                <input type="button" >
+            </div>
+        </div>
+        <div style=" width: 320px; height: 730px; float: right;">
+            <img src="img/banner_dangKi.png">
+        </div>
+
+
+
+        <footer>
+            <div>
+                <h3 class="text-white mb-3">DOLLY STORE</h3>
+                <p>Địa Chỉ: 27b Nguyễn Đình Chiểu, Phường Đakao, Quận 1, TP.HCM</p>
+                <p>Điện thoại: 1900.63.68.22</p>
+                <p>Email: info@dollystore.vn</p>
+                <p>Website: support.dollystore.vn</p>
+            </div>
+        </footer>
+
+        <script src="css/cart.js"></script>
+</body>
+
+</html>
